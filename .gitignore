@@ -1,0 +1,32 @@
+# dependencies / build
+node_modules/
+dist/
+build/
+coverage/
+
+# secrets
+.env
+.env.*
+!.env.template
+!.env.example
+*.pem
+*.key
+
+# local DB data
+mongo/
+postgres/
+**/postgres/
+**/mongo/
+
+# uploaded files
+nest-teslo-shop/static/uploads/*
+!nest-teslo-shop/static/uploads/.gitkeep
+
+# logs / OS / IDE
+*.log
+.DS_Store
+.idea/
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+*.db
